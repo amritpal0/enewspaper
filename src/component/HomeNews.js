@@ -9,6 +9,12 @@ export default function HomeNews(props) {
         const slug = props.news.slug;
         getSingleNews(slug);
     }
+
+    const dateFormat = (date) => {
+        const originalDate = new Date(date);
+        const formattedDate = originalDate.toISOString().slice(0, 10);
+        return formattedDate;
+    }
   return (
    <>
         <div className="post-preview">
@@ -18,8 +24,8 @@ export default function HomeNews(props) {
             </Link>
             <p className="post-meta">
                 Posted by
-                <a href="#!">Start Bootstrap</a>
-                on September 24, 2023
+                <a href="#!"> EReporter</a>
+                on {dateFormat(props.news.created_at)}
             </p>
         </div>
         <hr className="my-4" />
