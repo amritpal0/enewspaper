@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import newsContext from '../context/news/newsContext';
+import newsContext from '../../context/news/newsContext';
 
 export default function HomeNews(props) {
     const context = useContext(newsContext);

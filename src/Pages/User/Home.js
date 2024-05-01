@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
-import Banner from '../component/Banner'
-import newsContext from '../context/news/newsContext'
-import HomeNews from '../component/HomeNews';
+import Banner from '../../component/UserPanel/Banner'
+import newsContext from '../../context/news/newsContext'
+import HomeNews from '../../component/UserPanel/HomeNews';
 
 export default function Home() {
     const context = useContext(newsContext);
