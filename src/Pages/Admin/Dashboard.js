@@ -3,7 +3,6 @@ import React from 'react'
 export default function Dashboard() {
   return (
     <>
-    <div id="layoutSidenav_content">
         <main className='pt-3'>
             <div className="container-fluid px-4">
                 <h1 className="mt-4">Dashboard</h1>
@@ -558,19 +557,6 @@ export default function Dashboard() {
                 </div>
             </div>
         </main>
-        <footer className="py-4 bg-light mt-auto">
-            <div className="container-fluid px-4">
-                <div className="d-flex align-items-center justify-content-between small">
-                    <div className="text-muted">Copyright &copy; Your Website 2023</div>
-                    <div>
-                        <a href="#">Privacy Policy</a>
-                        &middot;
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
     </>
   )
 }

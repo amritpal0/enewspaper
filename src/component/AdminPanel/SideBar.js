@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function SideBar() {
   return (
@@ -8,16 +9,16 @@ export default function SideBar() {
                 <div className="sb-sidenav-menu">
                     <div className="nav">
                         <div className="sb-sidenav-menu-heading">Core</div>
-                        <a className="nav-link" href="index.html">
+                        <Link className="nav-link" to="/dashboard">
                             <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
                             Dashboard
-                        </a>
+                        </Link>
                         <div className="sb-sidenav-menu-heading">Interface</div>
-                        <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <Link className="nav-link collapsed" to="/news" >
                             <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
-                            Layouts
+                            News
                             <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
-                        </a>
+                        </Link>
                         <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav className="sb-sidenav-menu-nested nav">
                                 <a className="nav-link" href="layout-static.html">Static Navigation</a>
